@@ -63,8 +63,6 @@ public class Main_grocery {
     }
 
 
-
-
     public static void modifyItem(){
         System.out.println("Enter current item name: ");
         String itemNo = scan.nextLine(); //accepts the next input value from the user
@@ -90,6 +88,15 @@ public class Main_grocery {
             System.out.println(searchItem +" not found in the shopping list");
         }
 
+    }
+
+
+    /**
+     * Copies all the items from the list to the newCart.
+     */
+    public static void processArray(){
+        ArrayList<String> newCart = new ArrayList<>();
+        newCart.addAll(groceryList.getGroceryList());
     }
 
 }
