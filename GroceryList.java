@@ -20,6 +20,15 @@ public class GroceryList {
     }
 
     /**
+     * Getter method used with the processArray Method in Main_grocery.java class
+     *
+     * @return the list of item in the grocery list.
+     */
+   public ArrayList<String> getGroceryList(){
+       return groceryList;
+   }
+
+    /**
      * This method prints all the items on the grocery list.
      */
     public void printGroceryList(){
