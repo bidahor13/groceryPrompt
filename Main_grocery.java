@@ -42,11 +42,18 @@ public class Main_grocery {
                  case 6:
                      quit = true;
                      break;
+                 case 7:
+                     processArray();
+                     break;
 
              }
          }
      }
-     public static void printInstruction(){
+
+    /**
+     * Instructions designated for each function.
+     */
+    public static void printInstruction(){
          System.out.println("\nPress: ");
          System.out.println("\t 0 - To print choice options. ");
          System.out.println("\t 1 - To print the list of grocery items. ");
@@ -55,6 +62,7 @@ public class Main_grocery {
          System.out.println("\t 4 - To remove an item from the list ");
          System.out.println("\t 5 - To search for an item in the list. ");
          System.out.println("\t 6 - To quit the application. ");
+         System.out.println("\t 7 - To print all the element in Array. ");
      }
 
      public static void addItem(){
@@ -66,7 +74,6 @@ public class Main_grocery {
     public static void modifyItem(){
         System.out.println("Enter current item name: ");
         String itemNo = scan.nextLine(); //accepts the next input value from the user
-        //scan.nextLine();
         System.out.println("Enter replacement item: ");
         String newItem = scan.nextLine();
         groceryList.modifyGroceryList(itemNo,  newItem);
